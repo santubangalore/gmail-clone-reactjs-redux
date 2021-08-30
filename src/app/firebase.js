@@ -1,6 +1,8 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
+
+
 //import { firebase} from 'firebase';
 // Follow this pattern to import other Firebase services
 // import { } from 'firebase/<service>';
@@ -25,4 +27,4 @@ const db = getFirestore(app)
 const auth = getAuth();
 const provider = new GoogleAuthProvider();
 
-export {auth,db, provider}; 
+export {auth, db, provider}; 
